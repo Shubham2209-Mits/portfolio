@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import sqlite3
 
-app = Flask(__name__, template_folder='D:/shubham_portfolio')
+app = Flask(__name__, template_folder='D:/PORTFOLIO')
 
 @app.route("/")
 def index():
@@ -15,7 +15,7 @@ def submit():
    
 
     # Connect to the SQLite database
-    conn = sqlite3.connect('mydatabase.sqlite')
+    conn = sqlite3.connect('D:/PORTFOLIO/data/mydatabase.sqlite')
     cursor = conn.cursor()
 
     # Insert data into the database
